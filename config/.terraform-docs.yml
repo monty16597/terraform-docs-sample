@@ -1,0 +1,10 @@
+content: |-
+  # Usage
+
+  {{ .Content }}
+
+  ## Example
+
+  ```hcl
+  {{ include "./example/main.tf" }}
+  ```
