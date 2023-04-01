@@ -1,7 +1,11 @@
 <!-- BEGIN_TF_DOCS -->
 # Usage
 
+## Requirements
 
+| Name | Version |
+|------|---------|
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.61.0 |
 
 ## Providers
 
@@ -10,15 +14,19 @@
 | <a name="provider_archive"></a> [archive](#provider\_archive) | n/a |
 | <a name="provider_aws"></a> [aws](#provider\_aws) | 4.61.0 |
 
-## Requirements
-
-| Name | Version |
-|------|---------|
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.61.0 |
-
 ## Modules
 
 No modules.
+
+## Resources
+
+| Name | Type |
+|------|------|
+| [aws_iam_role.iam_for_lambda](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/resources/iam_role) | resource |
+| [aws_lambda_function.lambda](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/resources/lambda_function) | resource |
+| [archive_file.lambda](https://registry.terraform.io/providers/hashicorp/archive/latest/docs/data-sources/file) | data source |
+| [aws_iam_policy_document.assume_role](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/data-sources/iam_policy_document) | data source |
+| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/data-sources/region) | data source |
 
 ## Inputs
 
@@ -39,18 +47,6 @@ No modules.
 | <a name="output_iam_assume_role_arn"></a> [iam\_assume\_role\_arn](#output\_iam\_assume\_role\_arn) | AWS ARN for the IAM assume role |
 | <a name="output_iam_assume_role_name"></a> [iam\_assume\_role\_name](#output\_iam\_assume\_role\_name) | Name of the IAM assume role |
 
-## Resources
-
-| Name | Type |
-|------|------|
-| [aws_iam_role.iam_for_lambda](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/resources/iam_role) | resource |
-| [aws_lambda_function.lambda](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/resources/lambda_function) | resource |
-| [archive_file.lambda](https://registry.terraform.io/providers/hashicorp/archive/latest/docs/data-sources/file) | data source |
-| [aws_iam_policy_document.assume_role](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/data-sources/iam_policy_document) | data source |
-| [aws_region.current](https://registry.terraform.io/providers/hashicorp/aws/4.61.0/docs/data-sources/region) | data source |
-
-# Examples
-
 ```hcl
 module "function_testing" {
   source          = "../"
@@ -65,6 +61,4 @@ module "function_testing" {
   }
 }
 ```
-
-
 <!-- END_TF_DOCS -->
