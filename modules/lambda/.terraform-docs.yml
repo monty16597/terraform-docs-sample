@@ -8,6 +8,8 @@ content: |-
 
   {{ .Requirements }}
 
+  {{ .Modules }}
+  
   {{ .Inputs }}
 
   {{ .Outputs }}
