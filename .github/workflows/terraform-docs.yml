@@ -17,3 +17,4 @@ jobs:
         git-push: "true"
         recursive: true
         recursive-path: modules/
+        config-file: ./config/.terraform-docs.yml

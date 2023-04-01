@@ -1,7 +1,0 @@
-# .terraform-docs.yml
-content: |-
-  # Usage
-
-  {{ .Modules }}
-
-  {{ .Outputs }}
