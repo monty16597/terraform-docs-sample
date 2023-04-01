@@ -37,3 +37,11 @@ jobs:
         git-push: "true"
         recursive: true
         recursive-path: modules/
+        template: |-
+          <!-- BEGIN_TF_DOCS -->
+            {{ .Content }}
+            ## Example
+            ```hcl
+              {{ include "./example/main.tf" }}
+            ```
+          <!-- END_TF_DOCS -->
