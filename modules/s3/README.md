@@ -15,6 +15,10 @@
 |------|---------|
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | 4.61.0 |
 
+## Modules
+
+No modules.
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |
