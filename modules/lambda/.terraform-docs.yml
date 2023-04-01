@@ -2,24 +2,8 @@
 content: |-
   # Usage
 
-  {{ .Header }}
-
-  {{ .Providers }}
-
-  {{ .Requirements }}
-
-  {{ .Modules }}
-  
-  {{ .Inputs }}
-
-  {{ .Outputs }}
-
-  {{ .Resources }}
-
-  # Examples
+  {{ .Content }}
 
   ```hcl
   {{ include "./example/main.tf" }}
   ```
-  
-  {{ .Footer }}
