@@ -7,5 +7,5 @@ content: |-
   ## Example
 
   ```hcl
-  {{ include "./example/main.tf" }}
+  {{ include "example/main.tf" }}
   ```

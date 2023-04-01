@@ -8,6 +8,26 @@ jobs:
     - uses: actions/checkout@v3
       with:
         ref: ${{ github.event.pull_request.head.ref }}
+    
+    - uses: monty16597/file-generator@main
+      with:
+          WORK_DIR: "./modules/"
+          FILE_NAME: ".terraform-docs.yml"
+          FILE_CONTENT: |
+            # .terraform-docs.yml
+            content: |-
+              # Usage
+
+              {{ .Content }}
+
+              ## Example
+
+              ```hcl
+              {{ include "example/main.tf" }}
+              ```
+          OVERRIDE_CONTENT: true
+          RECURSIVE: true
+          RECURSIVE_DEPTH: 1
 
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@v1.0.0
