@@ -1,0 +1,23 @@
+# .terraform-docs.yml
+content: |-
+  # Usage
+
+  {{ .Header }}
+
+  {{ .Providers }}
+
+  {{ .Requirements }}
+
+  {{ .Inputs }}
+
+  {{ .Outputs }}
+
+  {{ .Resources }}
+
+  # Examples
+
+  ```hcl
+  {{ include "./example/main.tf" }}
+  ```
+  
+  {{ .Footer }}
