@@ -13,7 +13,7 @@ jobs:
       with:
           WORK_DIR: "./modules/"
           FILE_NAME: ".terraform-docs.yml"
-          FILE_CONTENT: |
+          FILE_CONTENT: |-
             # .terraform-docs.yml
             content: |-
               # Usage
@@ -23,7 +23,7 @@ jobs:
               ## Example
 
               ```hcl
-              {{ include "example/main.tf" }}
+              {{ include "./example/main.tf" }}
               ```
           OVERRIDE_CONTENT: true
           RECURSIVE: true
