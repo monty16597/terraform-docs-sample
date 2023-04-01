@@ -4,6 +4,8 @@ content: |-
 
   {{ .Content }}
 
+  ## Example
+
   ```hcl
   {{ include "./example/main.tf" }}
   ```

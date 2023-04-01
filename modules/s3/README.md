@@ -40,6 +40,8 @@ No modules.
 | <a name="output_bucket_regional_domain_name"></a> [bucket\_regional\_domain\_name](#output\_bucket\_regional\_domain\_name) | Regional domain of the bucket (i.e. bucket-name.s3.region-code.amazonaws.com) |
 | <a name="output_id"></a> [id](#output\_id) | Bucket name |
 
+## Example
+
 ```hcl
 module "s3_testing" {
   source      = "../"

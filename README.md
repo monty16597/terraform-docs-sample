@@ -5,6 +5,7 @@ This project is sample of how terraform-doc in action works. It has automated te
 
 We can add `terraform-docs.yml` configuration file in each modules to override settings of the terraform-docs tool.
 i.e. We are overiding content of README.md file in lambda and s3 modules to add example. i.e. [Lambda terraform-docs configuration](https://github.com/monty16597/terraform-docs-sample/blob/main/modules/lambda/.terraform-docs.yml) and [Lambda generated README](https://github.com/monty16597/terraform-docs-sample/blob/main/modules/lambda/README.md).
+
 <!-- BEGIN_TF_DOCS -->
 # Usage
 

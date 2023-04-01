@@ -47,6 +47,8 @@ No modules.
 | <a name="output_iam_assume_role_arn"></a> [iam\_assume\_role\_arn](#output\_iam\_assume\_role\_arn) | AWS ARN for the IAM assume role |
 | <a name="output_iam_assume_role_name"></a> [iam\_assume\_role\_name](#output\_iam\_assume\_role\_name) | Name of the IAM assume role |
 
+## Example
+
 ```hcl
 module "function_testing" {
   source          = "../"
