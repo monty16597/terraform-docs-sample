@@ -2,6 +2,10 @@
 content: |-
   # Usage
 
-  {{ .Modules }}
+  {{ .Content }}
 
-  {{ .Outputs }}
+  ## Example
+
+  ```hcl
+  {{ include "./example/main.tf" }}
+  ```
