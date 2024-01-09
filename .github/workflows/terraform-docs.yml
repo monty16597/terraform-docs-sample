@@ -5,9 +5,12 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+
+    # Checkout the base branch of the pull request (e.g. main/master).
+    - name: Checkout base branch
+      uses: actions/checkout@v3
       with:
-        ref: ${{ github.event.pull_request.head.ref }}
+        ref: '${{ github.event.pull_request.base.ref }}'
 
     - name: Render terraform docs inside the README.md and push changes back to PR branch
       uses: terraform-docs/gh-actions@v1.0.0
@@ -17,3 +20,4 @@ jobs:
         git-push: "true"
         recursive: true
         recursive-path: modules/
+        config-file: ./config/.terraform-docs.yml
